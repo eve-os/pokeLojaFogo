@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: auto;
+
+    .box {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 50%;
+        margin-top: 10px;
+    }
+}
+
+header {
+    background-color: #400601;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        margin: 5px;
+        color: #fff;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    input {
+        width: 20%;
+        margin: 10px;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        height: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: block;
+   
+        .box {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 90%;
+            margin: 10px auto;
+        }
+    } 
+}

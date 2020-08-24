@@ -1,0 +1,54 @@
+.modal {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    .modal-container {
+        background-color: #F25C05;
+        border-radius: 20px;
+        border: 3px solid #fff;        
+        color: #400601;
+        height: 20%;
+        padding: 10px;
+        position: fixed;
+        text-align: center;
+        width: 30%;
+
+
+        .close {
+            background-color: transparent;
+            border: none;
+            height: 32px;
+            outline: none;
+            width: 32px;
+
+            &::before,
+            &::after {
+                content: ' ';
+                background-color: #fff;
+                height: 24px;
+                position: absolute;
+                width: 2.5px;
+            }
+            &:before {
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
+    }   
+}
+
+@media only screen and (max-width: 768px) {
+    .modal 
+    .modal-container {
+        width: 90%;
+    }
+}

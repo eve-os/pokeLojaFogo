@@ -1,0 +1,48 @@
+.box li {
+    align-items: center;
+    background-color: #F25C05;
+    border-radius: 5%;
+    border: 2px solid #fff;
+    display: block;
+    height: 20x;
+    list-style: none;
+    padding: 15px;
+    text-align: center;
+
+    img {
+        background-color: #fff;
+        border-radius: 100%;
+        max-width: 80px;
+    }
+
+    hr {
+        color: #fff;
+    }
+
+    strong {
+        color: #fff;
+    }
+
+    span {
+        color: #0D0D0D;
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .btn-add {
+        background-color: #8C1C03;
+        border: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        display: flex;
+        font-weight: bold;
+        font-size: 17px;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        padding: 5px;
+   
+    }
+}
+
